@@ -4,6 +4,7 @@ public abstract class Forma implements Cloneable{
 
 	private String id;
 	protected String type;
+	protected String nome;
 	
 	public abstract void draw();
 	
@@ -33,5 +34,13 @@ public abstract class Forma implements Cloneable{
 		}
 		
 		return clone;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 }
